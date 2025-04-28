@@ -53,6 +53,7 @@ CodeDeploy: Automates deployment to EC2 instances.
 
 
 •	Created an AMI image of the instance for future deployments.
+![AMI IMAGES](/Screenshots/Screenshot(9).png) ![AMI IMAGES](/Screenshots/Screenshot(12).png)
 
 Used AWS Cloudformation Templates in both regions to:     
 
