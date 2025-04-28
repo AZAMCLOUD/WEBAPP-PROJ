@@ -180,14 +180,23 @@ Resources:
 
 
 # CI/CD Pipeline Setup
+I put my Application and its dependencies in a GitHub repository.
+
 Configured a CodePipeline that:
+
 •	Pulls Web Application source code from GitHub repository.
+
 •	Deploys the artifact using CodeDeploy (using appspec.yml).
-Deployment Workflow
+
+### Deployment Workflow
 •	Developer pushes code changes to GitHub.
+
 •	CodePipeline triggers automatically.
+
 •	CodeDeploy deploys the new build to EC2 instances across multiple regions.
+
 •	Load balancer routes traffic to healthy instances.
+
 •	CloudWatch monitors the entire system for performance and failures.
 
 # Auto-Scaling Deployment and Logs 
