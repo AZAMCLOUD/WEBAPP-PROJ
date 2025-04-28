@@ -172,7 +172,7 @@ Resources:
 •	Created Health checks for both regions
 
 •	Added Failover-based A records pointing to ELBs in each region
-![Route53](/Screenshots/Screenshot (13).png)  ![Route53](/Screenshots/Screenshot (14).png)
+![Route53](/Screenshots/Screenshot(13).png)  ![Route53](/Screenshots/Screenshot(14).png)
 
 
 
