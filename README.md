@@ -46,12 +46,11 @@ CodeBuild: Builds and tests application code.
 CodeDeploy: Automates deployment to EC2 instances.
 
 # Instance Deployment 
-•	Created a Test Instance in each Regions and installed application dependencies on them. i.e Codedeploy Agent, Apache server, cloudwatch agent. 
-![Test Instance with Dependencies Installed](/Screenshots/Screenshot(7).png)  ![Test Instance with Dependencies Installed](/Screenshots/Screenshot(8).png)  ![Test Instance with Dependencies Installed](/Screenshots/Screenshot(10).png)
-![Test Instance with Dependencies Installed](/Screenshots/Screenshot(11).png)
-
+•	Created a Test Instance in each Regions and installed application dependencies on them. i.e Codedeploy Agent, Apache server, cloudwatch agent.
 
 •	Created an AMI image of the instance for future deployments.
+![Test Instance with Dependencies Installed](/Screenshots/Screenshot(7).png)  ![Test Instance with Dependencies Installed](/Screenshots/Screenshot(8).png)  ![Test Instance with Dependencies Installed](/Screenshots/Screenshot(10).png)
+![Test Instance with Dependencies Installed](/Screenshots/Screenshot(11).png)
 ![AMI IMAGES](/Screenshots/Screenshot(9).png) ![AMI IMAGES](/Screenshots/Screenshot(12).png)
 
 
@@ -172,15 +171,14 @@ Resources:
 •	Created Health checks for both regions
 
 •	Added Failover-based A records pointing to ELBs in each region
-![Route53](/Screenshots/Screenshot(13).png)  ![Route53](/Screenshots/Screenshot(14).png)
-
-
-
-
+![Route53](/Screenshots/Screenshot(13).png) 
+![Route53](/Screenshots/Screenshot(14).png)
 
 
 # CI/CD Pipeline Setup
 I put my Application and its dependencies in a GitHub repository.
+![CI/CD](/Screenshots/Screenshot (14).png)
+
 
 Configured a CodePipeline that:
 
