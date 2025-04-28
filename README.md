@@ -209,7 +209,11 @@ Configured a CodePipeline that:
 ![Deployment](/Screenshots/Screenshot(20).png)
 
 # Auto-Scaling Deployment and Logs 
-Simulated a CPU spike on an Instance to trigger a cloudwatch alarm which then triggers automatic scaling defined by scaling polices (CPU Utilization)
+Generated Load on the ALB to trigger a cloudwatch alarm which then triggers automatic scaling defined by scaling polices (ALB request count per target)
+
+Command to generate Load on ALB  # Command to generate load on the ALB
+
+```for i in {1..200}; do curl http://your-alb-address.com & done; wait```
 
 # Test Failover
 •	Simulated a region going down i.e.  EC2 in us-east-1
