@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/0a6a2a50-c19f-4159-b98e-eb149a38bca8)# Project Documentation: Multi-Region Scalable Web Application Deployment (DevOps)
 # Project Overview
 Brief description of the project:
 
@@ -175,6 +174,8 @@ Resources:
 ![Route53](/Screenshots/Screenshot(14).png)
 
 
+
+
 # CI/CD Pipeline Setup
 I put my Application and its dependencies in a GitHub repository
 
@@ -184,9 +185,11 @@ Configured a CodePipeline that:
 •	Pulls Web Application source code from GitHub repository.
 
 •	Deploys the artifact using CodeDeploy (using appspec.yml).
+
+
 ![CI/CD](/Screenshots/Screenshot(16).png)
 ![CI/CD](/Screenshots/Screenshot(19).png)
-
+![CI/CD](/Screenshots/Screenshot(21).png)
 
 ### Deployment Workflow
 •	Developer pushes code changes to GitHub.
