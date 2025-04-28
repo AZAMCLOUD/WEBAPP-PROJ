@@ -219,15 +219,23 @@ Command to generate Load on ALB  # Command to generate load on the ALB
 
 # Test Failover
 •	Simulated a region going down i.e.  EC2 in us-east-1
-•	Route 53 routes traffic to us-west-1 ELB automaticall
+
+•	Route 53 routes traffic to us-west-1 ELB automatically
 
 # Monitoring and Logging
+
 CloudWatch Alarms set on:
-•	EC2 CPUUtilization
+
+•	ASG EC2 CPUUtilization
+
 •	Failed Pipeline Executions
+
 •	Route 53 Health Check Status
-Created a Web Application Log Groups for application and system logs.
-Route 53 Health Checks to monitor regional endpoints
+
+•	ALB TargetGroup Unhealthy State DNS
+
+Enabled Monitoring Dashboard and Created a Web Application Log Groups for application and system logs.
+
 
  # Improvements and Next Steps
 •	Set up S3 bucket replication for faster cross-region deployments.
