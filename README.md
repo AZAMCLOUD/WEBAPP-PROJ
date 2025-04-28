@@ -202,6 +202,12 @@ Configured a CodePipeline that:
 
 •	CloudWatch monitors the entire system for performance and failures.
 
+![Deployment](/Screenshots/Screenshot(22).png) 
+![Deployment](/Screenshots/Screenshot(24).png) 
+![Deployment](/Screenshots/Screenshot(23).png)
+![Deployment](/Screenshots/Screenshot(25).png)
+![Deployment](/Screenshots/Screenshot(20).png)
+
 # Auto-Scaling Deployment and Logs 
 Simulated a CPU spike on an Instance to trigger a cloudwatch alarm which then triggers automatic scaling defined by scaling polices (CPU Utilization)
 
