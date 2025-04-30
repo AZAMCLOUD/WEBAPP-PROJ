@@ -187,8 +187,9 @@ Configured a CodePipeline that:
 •	Deploys the artifact using CodeDeploy (using appspec.yml).
 
 
-![CI/CD](/Screenshots/Screenshot(16).png)
-![CI/CD](/Screenshots/Screenshot(19).png)
+![CI/CD](/Screenshots/Screenshot(47).png)
+![CI/CD](/Screenshots/Screenshot(48).png)
+![CI/CD](/Screenshots/Screenshot(46).png)
 ![CI/CD](/Screenshots/Screenshot(21).png)
 
 ### Deployment Workflow
@@ -206,7 +207,7 @@ Configured a CodePipeline that:
 ![Deployment](/Screenshots/Screenshot(24).png) 
 ![Deployment](/Screenshots/Screenshot(23).png)
 ![Deployment](/Screenshots/Screenshot(25).png)
-![Deployment](/Screenshots/Screenshot(20).png)
+![Deployment](/Screenshots/Screenshot(51).png)
 
 # Auto-Scaling Deployment and Logs 
 Generated Load on the ALB to trigger a cloudwatch alarm which then triggers automatic scaling defined by scaling polices (ALB request count per target)
