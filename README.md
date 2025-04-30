@@ -223,6 +223,8 @@ Command to generate Load on ALB  # Command to generate load on the ALB
 
 •	Route 53 routes traffic to us-west-1 ELB automatically
 
+
+
 # Monitoring and Logging
 
 CloudWatch Alarms set on:
