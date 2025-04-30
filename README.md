@@ -1,7 +1,7 @@
 # Project Overview
 Brief description of the project:
 
-Deployed a highly available Node.js web application across multiple AWS regions.
+Deployed a highly available static web application across multiple AWS regions.
 
 Implemented automatic scaling, load balancing, and CI/CD pipelines.
 
@@ -26,9 +26,7 @@ Elastic Load Balancer (ELB): Distributes incoming traffic.
 
 Auto Scaling Group (ASG): Automatically adjusts capacity.
 
-EC2: Hosts the Node.js application.
-
-S3: Stores application artifacts.
+EC2: Hosts the Web application.
 
 CloudFormation: Automates infrastructure deployment.
 
@@ -40,17 +38,24 @@ CloudWatch: Logs and monitors metrics.
 
 CodePipeline: Orchestrates the CI/CD pipeline.
 
-CodeBuild: Builds and tests application code.
-
 CodeDeploy: Automates deployment to EC2 instances.
 
 # Instance Deployment 
 •	Created a Test Instance in each Regions and installed application dependencies on them. i.e Codedeploy Agent, Apache server, cloudwatch agent.
 
 •	Created an AMI image of the instance for future deployments.
-![Test Instance with Dependencies Installed](/Screenshots/Screenshot(7).png)  ![Test Instance with Dependencies Installed](/Screenshots/Screenshot(8).png)  ![Test Instance with Dependencies Installed](/Screenshots/Screenshot(10).png)
+
+![Test Instance with Dependencies Installed](/Screenshots/Screenshot(7).png) 
+
+![Test Instance with Dependencies Installed](/Screenshots/Screenshot(8).png) 
+
+![Test Instance with Dependencies Installed](/Screenshots/Screenshot(10).png)
+
 ![Test Instance with Dependencies Installed](/Screenshots/Screenshot(11).png)
-![AMI IMAGES](/Screenshots/Screenshot(9).png) ![AMI IMAGES](/Screenshots/Screenshot(12).png)
+
+![AMI IMAGES](/Screenshots/Screenshot(9).png) 
+
+![AMI IMAGES](/Screenshots/Screenshot(12).png)
 
 
 Used AWS Cloudformation Templates in both regions to:     
@@ -164,13 +169,16 @@ Resources:
       HealthCheckGracePeriod: 300
 ```
 
+
 # Route 53 Configurations 
 •	Created a Hosted Zone
 
 •	Created Health checks for both regions
 
 •	Added Failover-based A records pointing to ELBs in each region
+
 ![Route53](/Screenshots/Screenshot(13).png) 
+
 ![Route53](/Screenshots/Screenshot(14).png)
 
 
@@ -188,8 +196,11 @@ Configured a CodePipeline that:
 
 
 ![CI/CD](/Screenshots/Screenshot(47).png)
+
 ![CI/CD](/Screenshots/Screenshot(48).png)
+
 ![CI/CD](/Screenshots/Screenshot(46).png)
+
 ![CI/CD](/Screenshots/Screenshot(21).png)
 
 ### Deployment Workflow
@@ -204,9 +215,13 @@ Configured a CodePipeline that:
 •	CloudWatch monitors the entire system for performance and failures.
 
 ![Deployment](/Screenshots/Screenshot(22).png) 
+
 ![Deployment](/Screenshots/Screenshot(24).png) 
+
 ![Deployment](/Screenshots/Screenshot(23).png)
+
 ![Deployment](/Screenshots/Screenshot(25).png)
+
 ![Deployment](/Screenshots/Screenshot(51).png)
 
 # Auto-Scaling Deployment and Logs 
@@ -216,6 +231,7 @@ Command to generate Load on ALB  # Command to generate load on the ALB
 ```for i in {1..200}; do curl http://your-alb-address.com & done; wait```
 
 ![ASG](/Screenshots/Screenshot(39).png) 
+
 ![ASG](/Screenshots/Screenshot(40).png) 
 
 # Test Failover
@@ -224,6 +240,7 @@ Command to generate Load on ALB  # Command to generate load on the ALB
 •	Route 53 routes traffic to us-west-1 ELB automatically
 
 ![Failover](/Screenshots/Screenshot(52).png)
+
 ![Failover](/Screenshots/Screenshot(53).png)
 
 
@@ -239,7 +256,13 @@ CloudWatch Alarms set on:
 
 •	ALB TargetGroup Unhealthy State DNS
 
+To send SNS Notifications to E-mail
+
 Enabled Monitoring Dashboard and Created a Web Application Log Groups for application and system logs.
+
+![ML](/Screenshots/Screenshot(31).png)
+
+![ML](/Screenshots/Screenshot(41).png)
 
 
  # Improvements and Next Steps
