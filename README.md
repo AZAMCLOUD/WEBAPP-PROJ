@@ -176,7 +176,7 @@ Resources:
 ![deployments](/Screenshots/Screenshot(58).png)
 ![deployments](/Screenshots/Screenshot(61).png)
 ![deployments](/Screenshots/Screenshot(59).png)
-![deployments](/Screenshots/Screenshot(60).png)
+![deployments](/Screenshots/Screenshot(62).png)
 
 # Route 53 Configurations 
 •	Created a Hosted Zone
