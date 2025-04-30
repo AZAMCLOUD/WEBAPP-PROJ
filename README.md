@@ -223,6 +223,8 @@ Command to generate Load on ALB  # Command to generate load on the ALB
 
 •	Route 53 routes traffic to us-west-1 ELB automatically
 
+![Failover](/Screenshots/Screenshot(52).png)
+![Failover](/Screenshots/Screenshot(53).png)
 
 
 # Monitoring and Logging
