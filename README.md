@@ -1,5 +1,5 @@
 # Project Overview
-Brief description of the project:
+### Brief description of the project:
 
 Deployed a highly available static web application across multiple AWS regions.
 
@@ -58,7 +58,7 @@ CodeDeploy: Automates deployment to EC2 instances.
 ![AMI IMAGES](/Screenshots/Screenshot(12).png)
 
 
-Used AWS Cloudformation Templates in both regions to:     
+### Used AWS Cloudformation Templates in both regions to:     
 
 •	Create Auto Scaling Groups and Elastic Load Balancers.
 
@@ -170,13 +170,21 @@ Resources:
 ```
 
 ![deployments](/Screenshots/Screenshot(26).png)
+
 ![deployments](/Screenshots/Screenshot(28).png)
+
 ![deployments](/Screenshots/Screenshot(57).png)
+
 ![deployments](/Screenshots/Screenshot(60).png)
+
 ![deployments](/Screenshots/Screenshot(58).png)
+
 ![deployments](/Screenshots/Screenshot(61).png)
+
 ![deployments](/Screenshots/Screenshot(59).png)
+
 ![deployments](/Screenshots/Screenshot(62).png)
+
 ![deployments](/Screenshots/Screenshot(15).png)
 
 # Route 53 Configurations 
@@ -195,7 +203,6 @@ Resources:
 
 # CI/CD Pipeline Setup
 I put my Application and its dependencies in a GitHub repository
-
 
 Configured a CodePipeline that:
 
@@ -276,7 +283,9 @@ Enabled Monitoring Dashboard and Created a Web Application Log Groups for applic
 
  # Improvements and Next Steps
 •	Set up S3 bucket replication for faster cross-region deployments.
+
 •	Implement blue-green deployments for safer updates.
+
 •	Use AWS Global Accelerator for better global performance.
 
 
