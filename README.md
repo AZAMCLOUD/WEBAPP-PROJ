@@ -169,6 +169,14 @@ Resources:
       HealthCheckGracePeriod: 300
 ```
 
+![deployments](/Screenshots/Screenshot(26).png)
+![deployments](/Screenshots/Screenshot(28).png)
+![deployments](/Screenshots/Screenshot(57).png)
+![deployments](/Screenshots/Screenshot(60).png)
+![deployments](/Screenshots/Screenshot(58).png)
+![deployments](/Screenshots/Screenshot(61).png)
+![deployments](/Screenshots/Screenshot(59).png)
+![deployments](/Screenshots/Screenshot(60).png)
 
 # Route 53 Configurations 
 •	Created a Hosted Zone
